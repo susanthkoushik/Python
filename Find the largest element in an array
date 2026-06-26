@@ -1,0 +1,22 @@
+from array import *
+
+arr = array('i',[])
+
+n = int(input("enter the length of arr"))
+
+for i in range(n):
+    
+    x = int(input("enter the value of array"))
+    arr.append(x)
+
+print(arr)
+    
+# print("largest array is",max(arr))
+
+largest = arr[0]
+
+for z in arr:
+    if z > largest:
+        largest = z
+
+print("laegest number is",largest)
